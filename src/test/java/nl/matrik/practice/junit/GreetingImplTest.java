@@ -15,10 +15,11 @@ class GreetingImplTest {
     }
 
     @Test
-    void greetShouldReturnAValidOutput2() {
+    void greetShouldReturnAInvalidOutput() {
         Greeting greeting = new GreetingImpl();
         String result = greeting.greet("JUnit5");
         assertNotNull(result);
-        assertEquals("Hello", result);
+        assertEquals("Hello JUnit4", result);
     }
+
 }
