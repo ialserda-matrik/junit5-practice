@@ -19,7 +19,7 @@ class GreetingImplTest {
         Greeting greeting = new GreetingImpl();
         String result = greeting.greet("JUnit5");
         assertNotNull(result);
-        assertEquals("Hello JUnit4", result);
+        assertNotEquals("Hello JUnit4", result);
     }
 
 }
